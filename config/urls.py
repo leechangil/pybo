@@ -7,5 +7,6 @@ urlpatterns = [
     path('common/', include('common.urls')),
     path('admin/', admin.site.urls),
     path('', base_views.index, name='index'),  # '/' 에 해당되는 path
-    handler404 = 'common.views.page_not_found'
 ]
+
+handler404 = 'common.views.page_not_found'
